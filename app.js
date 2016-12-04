@@ -150,8 +150,9 @@ var __makeRelativeRequire = function(require, mappings, pref) {
 };
 require.register("initialize.js", function(exports, require, module) {
 document.addEventListener('DOMContentLoaded', () => {
-  // do your setup here
-  console.log('Initialized app')
+  document.querySelectorAll('[data-menu]').onclick = function(){
+      console.log('CLICKED');
+  };
 })
 
 });
